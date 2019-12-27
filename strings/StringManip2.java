@@ -36,13 +36,9 @@ public class StringManip2 {
 		{
 			for(int j=0;j<len;++j)
 			{
-				if(i==s.charAt(j))
+				if(s.contains(i+""))
 				{
-					for(int k = 0; k<26;++k)
-					{
-						if(i==ch[k])
-							break;
-					}
+					ctr++;
 				}
 			}
 		}
