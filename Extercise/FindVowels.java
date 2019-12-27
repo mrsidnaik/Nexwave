@@ -19,13 +19,13 @@ public class FindVowels {
 		int count;
 		boolean flag =true;
 		String s;
-		System.out.println("Enter words and type exit to quit");
+		System.out.println("Enter words and type quit to quit");
 		
 		while(flag == true)
 		{
 			
 			s=sc.nextLine();
-			if (s.equalsIgnoreCase("exit"))
+			if (s.equalsIgnoreCase("quit"))
 			{
 				flag = false;
 				selectWord(s);
@@ -70,7 +70,7 @@ public class FindVowels {
 			if(key.equalsIgnoreCase(s))
 					{
 						int value = map.get(key);
-						System.out.println("Word : "+key+" Vowel Count = "+value);
+						System.out.println("Word : "+key+" and the Vowel Count = "+value);
 						
 					}
 		}
