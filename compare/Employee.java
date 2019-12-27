@@ -1,6 +1,8 @@
 package compare;
 
-public class Employee {
+import java.util.Comparator;
+
+public class Employee implements Comparable<Employee>, Comparator<Employee>{
 	private String name;
 	private int id;
 	
@@ -36,6 +38,17 @@ public class Employee {
 	{
 		Employee e = (Employee)o;
 		return this.id==e.id;
+	}
+
+	@Override
+	public int compareTo(Employee other) {
+		
+		return this.name.compareTo(other.name);
+	}
+
+	@Override
+	public int compare(Employee e1, Employee e2) {
+		return e1.name.compareTo(e2.name);
 	}
 	
 	
